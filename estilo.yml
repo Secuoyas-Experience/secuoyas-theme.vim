@@ -1,0 +1,10 @@
+name: 'Secuoyas'
+version: '1.0.0'
+license: 'MIT'
+author: 'Francis Vega'
+url: ''
+description: 'A port vim theme from VSCode Secuoyas Theme'
+colorschemes:
+  - name: Secuoyas
+    background: 'dark'
+    palette: Secuoyas
