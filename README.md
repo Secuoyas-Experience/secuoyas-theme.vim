@@ -1,3 +1,3 @@
-# Secuoyas theme for VIM
+# Secuoyas code theme for VIM
 
-... star the dance!
+... start the dance!
