@@ -1,6 +1,36 @@
-lemon: '#ffcc55'
-grass: '#99bb00'
-ocean: '#66bbff'
-blood: '#ee2244'
-text: '#eeeeee'
-bg: '#282828'
+text: '#ffffff'
+bg: '#080808'
+
+gray1000: '#48505b'
+gray900: '#515a67'
+gray800: '#636e7e'
+gray700: '#818c9c'
+gray600: '#888f96'
+gray500: '#98a1ae'
+gray400: '#9ea3a0'
+gray300: '#afb6c0'
+gray200: '#b3b9bc'
+gray100: '#e9eaec'
+
+pyrite500: '#a17e54'
+pyrite400: '#b09068'
+pyrite300: '#bea382'
+pyrite200: '#d1b38f'
+pyrite100: '#ebc9a1'
+
+red300: '#d60058'
+red200: '#fa0067'
+red100: '#ff4390'
+
+magenta200: '#a950cf'
+magenta100: '#c792ea'
+
+aqua300: '#24b5d0'
+aqua200: '#3cc3dd'
+aqua100: '#85daea'
+
+yellow200: '#c7a705'
+yellow100: '#fbe15c'
+
+green200: '#c3e88d'
+green100: '#eeffff'

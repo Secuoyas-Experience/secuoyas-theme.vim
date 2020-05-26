@@ -4,7 +4,7 @@
 " URL: 
 " Author: Francis Vega
 " License: MIT
-" Last Change: 2020/05/25 19:56
+" Last Change: 2020/05/26 08:41
 " ===============================================================
 
 set background=dark
@@ -27,6 +27,15 @@ if exists('g:Secuoyas_bold')
 endif
 
 let g:Secuoyas_bold = get(g:, 'Secuoyas_bold', 0)
+hi Normal guifg=#ffffff ctermfg=15 guibg=#101010 ctermbg=233 gui=NONE cterm=NONE
+hi link javaScriptComment comment
+hi link javaScriptLineComment comment
+hi link javaScriptStringS string
+hi link javaScriptStringD string
+hi Comment guifg=#e9eaec ctermfg=255 gui=Italic cterm=Italic
+hi Constant guifg=#85daea ctermfg=116 gui=NONE cterm=NONE
+hi String guifg=#888f96 ctermfg=245 gui=NONE cterm=NONE
+hi Character guifg=#c3e88d ctermfg=150 gui=NONE cterm=NONE
 
 if exists('*term_setansicolors')
   let g:terminal_ansi_colors = repeat([0], 16)

@@ -21,7 +21,7 @@ MatchParen: ''
 ModeMsg: ''
 MoreMsg: ''
 NonText: ''
-Normal: ''
+Normal: 'text #101010'
 PMenu: ''
 PMenuSel: ''
 PmenuSbar: ''
@@ -43,11 +43,46 @@ Visual: ''
 VisualNOS: ''
 WarningMsg: ''
 WildMenu: ''
+
+# javascript
+javaScriptComment: '@comment' # Comment
+javaScriptLineComment: '@comment' # Comment
+javaScriptCommentTodo: '' # Todo
+javaScriptSpecial: '' # Special
+javaScriptStringS: '@string' # String
+javaScriptStringD: '@string' # String
+javaScriptCharacter: '' # Character
+javaScriptSpecialCharacter: '' # javaScriptSpecial
+javaScriptNumber: '' # javaScriptValue
+javaScriptConditional: '' # Conditional
+javaScriptRepeat: '' # Repeat
+javaScriptBranch: '' # Conditional
+javaScriptOperator: '' # Operator
+javaScriptType: '' # Type
+javaScriptStatement: '' # Statement
+javaScriptFunction: '' # Function
+javaScriptBraces: '' # Function
+javaScriptError: '' # Error
+javaScriptParensError: '' # Error
+javaScriptNull: '' # Keyword
+javaScriptBoolean: '' # Boolean
+javaScriptRegexpString: '' # String
+javaScriptIdentifier: '' # Identifier
+javaScriptLabel: '' # Label
+javaScriptException: '' # Exception
+javaScriptMessage: '' # Keyword
+javaScriptGlobal: '' # Keyword
+javaScriptMember: '' # Keyword
+javaScriptDeprecated: '' # Exception
+javaScriptReserved: '' # Keyword
+javaScriptDebug: '' # Debug
+javaScriptConstant: '' # Label
+
 # BASE SYNTAX
-Comment: ''
-Constant: ''
-String: '' # Constant
-Character: '' # Constant
+Comment: 'gray1000 . i'
+Constant: 'gray500 .'
+String: 'gray600 .' # Constant
+Character: 'green200 .' # Constant
 Boolean: '' # Constant
 Number: '' # Constant
 Float: '' # Constant
@@ -77,5 +112,5 @@ SpecialComment: '' # Special
 Debug: '' # Special
 Underlined: ''
 Ignore: ''
-Error: ''
+Error: 'red200 .'
 Todo: ''
