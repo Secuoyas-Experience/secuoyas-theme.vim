@@ -1,116 +1,207 @@
 # BASE UI
-ColorColumn: ''
-Conceal: ''
+Normal: 'white dark'
+LineNr: 'gray10 dark'
+
+# the screen line that the cursor is in when 'cursorline' is set
+CursorLine: '. #1b1b1b'
+#hi CursorLine guibg=#112630 ctermbg=235 gui=NONE cterm=NONE
+CursorLineNr: 'gray1 .'
+ColorColumn: '. gray10'
 Cursor: ''
+Conceal: ''
 CursorIM: ''
 CursorColumn: ''
-CursorLine: ''
-Directory: ''
-DiffAdd: ''
-DiffChange: ''
-DiffDelete: ''
-DiffText: ''
+Directory: 'blue .'
+
+DiffAdd: 'dark green'
+DiffChange: 'dark yellow'
+DiffDelete: 'dark red'
+DiffText: 'dark green'
+
+diffAdded: 'green2 .'
+diffRemoved: 'red .'
+
 ErrorMsg: ''
-VertSplit: ''
-Folded: ''
-FoldColumn: ''
-SignColumn: ''
-IncSearch: ''
-LineNr: ''
-MatchParen: ''
+VertSplit: 'gray7 .'
+Folded: 'gray7 dark'
+FoldColumn: 'gray3 dark'
+SignColumn: '- dark'
+IncSearch: 'bright yellow'
+# MatchParen: 'dark graya'
 ModeMsg: ''
 MoreMsg: ''
-NonText: ''
-Normal: 'text #101010'
-PMenu: ''
-PMenuSel: ''
+NonText: 'gray4 .'
+PMenu: '. purple2'
+PMenuSel: '. purple'
 PmenuSbar: ''
 PmenuThumb: ''
 Question: ''
-Search: ''
-SpecialKey: ''
+Search: 'dark yellow'
+SpecialKey: 'yellow .'
+# SpecialKey: 'gray4 .'
 SpellBad: ''
 SpellLocal: ''
 SpellCap: ''
 SpellRare: ''
-StatusLine: ''
-StatusLineNC: ''
+StatusLine: 'bright gray10'
+StatusLineNC: 'gray7 gray10'
 TabLine: ''
 TabLineFill: ''
 TabLineSel: ''
-Title: ''
-Visual: ''
+Title: 'blue . b'
+Visual: 'white purple2'
 VisualNOS: ''
 WarningMsg: ''
 WildMenu: ''
-
-# javascript
-javaScriptComment: '@comment' # Comment
-javaScriptLineComment: '@comment' # Comment
-javaScriptCommentTodo: '' # Todo
-javaScriptSpecial: '' # Special
-javaScriptStringS: '@string' # String
-javaScriptStringD: '@string' # String
-javaScriptCharacter: '' # Character
-javaScriptSpecialCharacter: '' # javaScriptSpecial
-javaScriptNumber: '' # javaScriptValue
-javaScriptConditional: '' # Conditional
-javaScriptRepeat: '' # Repeat
-javaScriptBranch: '' # Conditional
-javaScriptOperator: '' # Operator
-javaScriptType: '' # Type
-javaScriptStatement: '' # Statement
-javaScriptFunction: '' # Function
-javaScriptBraces: '' # Function
-javaScriptError: '' # Error
-javaScriptParensError: '' # Error
-javaScriptNull: '' # Keyword
-javaScriptBoolean: '' # Boolean
-javaScriptRegexpString: '' # String
-javaScriptIdentifier: '' # Identifier
-javaScriptLabel: '' # Label
-javaScriptException: '' # Exception
-javaScriptMessage: '' # Keyword
-javaScriptGlobal: '' # Keyword
-javaScriptMember: '' # Keyword
-javaScriptDeprecated: '' # Exception
-javaScriptReserved: '' # Keyword
-javaScriptDebug: '' # Debug
-javaScriptConstant: '' # Label
-
+EndOfBuffer: 'gray4 dark'
 # BASE SYNTAX
-Comment: 'gray1000 . i'
-Constant: 'gray500 .'
-String: 'gray600 .' # Constant
-Character: 'green200 .' # Constant
+Comment: 'gray10 . i'
+Constant: 'green2 .'
+String: 'yellow .'
+Character: '' # Constant
 Boolean: '' # Constant
-Number: '' # Constant
+Number: 'red .' # Constant
 Float: '' # Constant
-Identifier: ''
+Identifier: 'green2 .'
 Function: '' # Identifier
-Statement: ''
+Statement: 'gray2 .'
 Conditional: '' # Statement
 Repeat: '' # Statement
 Label: '' # Statement
-Operator: '' # Statement
+Operator: 'blue2 .' # Statement
 Keyword: '' # Statement
-Exception: '' # Statement
-PreProc: ''
+Exception: 'gray2 .' # Statement
+PreProc: 'purple .'
 Include: '' # PreProc
 Define: '' # PreProc
 Macro: '' # PreProc
 PreCondit: '' # PreProc
-Type: ''
-StorageClass: '' # Type
+Type: 'red .'
+StorageClass: 'purple .' # Type
 Structure: '' # Type
 Typedef: '' # Type
 Special: ''
 SpecialChar: '' # Special
 Tag: '' # Special
+htmlTag: 'gray'
+htmlEndTag: '@htmlTag'
 Delimiter: '' # Special
 SpecialComment: '' # Special
 Debug: '' # Special
 Underlined: ''
 Ignore: ''
-Error: 'red200 .'
-Todo: ''
+Error: ''
+Todo: 'gray7 yellow'
+
+# Javascript - pangloss/vim-javascript
+jsStorageClass: 'blue .'
+jsOperator: 'blue2 .'
+jsArrowFunction: 'purple .'
+# jsGlobalNodeObjects: 'green dark'
+jsString: 'gray2 .'
+jsComment: '@Comment'
+jsFuncCall: 'yellow4 .'
+jsNumber: 'red .'
+jsSpecial: 'yellow2 .'
+jsObjectProp: 'green2 .'
+jsOperatorKeyword: 'green2 .'
+jsBooleanFalse: 'red .'
+jsBooleanTrue: 'red .'
+jsRegexpString: 'blue2 .'
+jsConditional: 'gray2 .'
+jsFunction: 'blue2 .'
+jsReturn: 'gray2 .'
+jsFuncName: 'yellow4 .'
+jsFuncParens: 'yellow .'
+jsParensError: '@jsFuncParens'
+jsClassDefinition: 'yellow .'
+jsImport: 'purple . i'
+jsFrom: 'purple . i'
+jsModuleAs: 'purple . i'
+jsExport: 'green2 .'
+jsExportDefault: 'green2 .'
+jsExtendsKeyword: 'purple .'
+
+javaScriptReserved: 'blue .'
+javaScriptFuncParens: 'purple .'
+javaScriptParens: 'purple .'
+javaScriptConditional: 'purple .'
+javaScriptStringS: 'yellow .'
+javaScriptNumber: 'red .'
+javaScriptBoolean: 'red .'
+javaScriptBraces: 'gray4 .'
+javaScriptLineComment: '@Comment'
+javaScriptSpecial: 'yellow2 .'
+javaScriptFunction: 'blue .'
+javaScriptStatement: 'purple .'
+# catch
+javaScriptException: 'green .'
+
+##### CSS and Sass
+scssSelectorName: 'green .'
+cssTagName: 'red .'
+cssClassName: 'green . i'
+cssClassNameDot: '@cssClassName'
+cssBraces: 'yellow .'
+cssPositioningProp: 'green2 .'
+cssBoxProp: 'green2 .'
+cssDimensionProp: 'green2 .'
+cssTransitionProp: 'green2 .'
+cssTextProp: 'green2 .'
+cssFontProp: 'green2 .'
+cssBorderProp: 'green2 .'
+cssBackgroundProp: 'green2 .'
+# box-sizing
+cssUIProp: 'green2 .'
+# filter
+cssIEUIProp: 'red .'
+scssFunctionName: 'green .'
+cssPositioningAttr: 'red .'
+cssTableAttr: 'red .'
+cssCommonAttr: 'red .'
+cssColorProp: 'green2 .'
+cssIncludeKeyword: 'green2 .'
+cssKeyFrameSelector: 'green .'
+cssPseudoClassId: 'green . i'
+cssBorderAttr: 'red .'
+cssValueLength: 'yellow2 .'
+cssUnitDecorators: 'yellow3 .'
+cssIdentifier: 'yellow4 . i'
+
+##### markdown
+markdownHeadingDelimiter: 'gray .'
+markdownCodeDelimiter: 'yellow .'
+markdownCode: 'graya .'
+mkdCodeStart: 'white .'
+mkdCodeEnd: 'white .'
+mkdLinkDef: 'green2 .'
+mkdCodeDelimiter: 'gray dark'
+htmlH1: 'blue . b'
+htmlH2: '@htmlH1'
+htmlH3: '@htmlH1'
+htmlH4: 'blue .'
+htmlH5: '@htmlH4'
+htmlBold: 'purple dark b'
+shComment: 'gray dark i'
+
+##### nerd tree
+NERDTreeDir: 'gray10 .'
+NERDTreeOpenable: 'red .'
+NERDTreeClosable: 'yellow .'
+NERDTreeHelp: 'gray4 . i'
+NERDTreeUp: 'gray .'
+NERDTreeDirSlash: 'gray .'
+
+##### git
+gitcommitSummary: 'white .'
+
+##### indent guide
+# https://github.com/nathanaelkane/vim-indent-guides
+IndentGuidesOdd: '. gray4'
+IndentGuidesEven: '. gray7'
+
+##### GitGutter airblade/vim-gitgutter
+GitGutterAdd: 'green .'
+GitGutterChange: 'yellow .'
+GitGutterDelete: 'red .'
+GitGutterChangeDelete: 'yellow .'

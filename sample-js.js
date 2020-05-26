@@ -1,11 +1,12 @@
-const name = "Esto es un string";
-
 // Comment
+const string = "foo";
+const number = 3.141592;
+const bool = true;
 
 function $initHighlight(block, cls) {
   try {
     if (cls.search(/\bno\-highlight\b/) != -1)
-      return process(block, true, 0x0f) + ` class="${cls}"`;
+      return process(block, true, 0x0f) + `class="${cls}"`;
   } catch (e) {
     /* handle exception */
   }
